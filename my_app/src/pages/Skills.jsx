@@ -14,7 +14,7 @@ export const Skills = () => {
                     <h2 className="text-4xl sm:text-5xl font-bold mb-4">
                         My <span className="gradient-text">Skills</span>                      
                     </h2>
-                    <p className="text-foreground/70 max-w-2xl mx-auto">
+                    <p className="text-muted max-w-2xl mx-auto">
                         A collection of technical and analytical skills developed through academic projects,
                         coursework, and hands-on experience in data analytics and business intelligence.
                     </p>
@@ -31,7 +31,7 @@ export const Skills = () => {
                                     "flex items-center gap-3 px-6 py-3 rounded-full text-sm font-medium transition-all duration-300",
                                     activeCategory === cat.id
                                         ? "bg-primary text-primary-foreground shadow-lg scale-105"
-                                        : "bg-card border border-border hover:bg-secondary hover:border-primary/50 hover:text-primary hover:shadow-lg hover:-translate-y-0.5")}>
+                                        : "bg-card border border-border text-muted hover:bg-secondary hover:border-primary/40 hover:text-primary hover:shadow-[0_4px_15px_hsl(var(--primary)/0.15)] hover:-translate-y-0.5")}>
                                 <Icon size={18} className="transition-transform group-hover:scale-110" />
                                 {cat.label}
                             </button>
@@ -45,7 +45,7 @@ export const Skills = () => {
                         return (
                             <div
                                 key={index}
-                                className="group relative bg-card border border-border rounded-xl p-5 hover:bg-secondary hover:border-primary/50 transition-all duration-300 hover:shadow-[0_8px_20px_rgba(86,185,242,0.12)] hover:-translate-y-1">
+                                className="group relative bg-card border border-border rounded-xl p-5 transition-all duration-300 hover:bg-secondary hover:border-primary/40 hover:shadow-[0_8px_20px_hsl(var(--primary)/0.12)] hover:-translate-y-1">
                                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-r-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 
                                 <div className="flex items-center gap-3 pl-1">
@@ -53,14 +53,14 @@ export const Skills = () => {
                                         <Icon className="text-primary group-hover:text-accent transition-colors duration-300" size={20} />
                                     </div>
                                     
-                                    <span className="text-foreground/80 font-medium group-hover:text-primary group-hover:translate-x-1 transition-all duration-300 text-justify">
+                                    <span className="text-foreground font-medium group-hover:text-primary group-hover:translate-x-1 transition-all duration-300 text-left">
                                         {skill.name}
                                     </span>
                                 </div>
 
                                 {skill.level && (
                                     <div className="mt-3 ml-16">
-                                        <div className="h-3 w-full bg-primary/10 rounded-full overflow-hidden">
+                                        <div className="h-3 w-full bg-secondary rounded-full overflow-hidden">
                                             <div 
                                                 className="h-full bg-gradient-to-r from-primary to-accent rounded-full group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-500"
                                                 style={{ width: skill.level }}
@@ -73,7 +73,7 @@ export const Skills = () => {
                     })}
                 </div>
 
-                <div className="mt-12 text-center text-foreground/60 text-sm">
+                <div className="mt-12 text-center text-muted text-sm">
                     <p className="hover:text-foreground/80 transition-colors duration-300">
                         Skills are continuously developed through academic projects and self-study.
                     </p>

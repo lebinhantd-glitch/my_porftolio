@@ -12,8 +12,7 @@ export const Projects = () => {
             <div className="container mx-auto max-w-7xl relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-                        My <span className="gradient-text">Projects</span> and
-                        <span className="gradient-text"> Achievements</span>
+                        My <span className="gradient-text">Projects</span>
                     </h2>
                     <p className="text-foreground/70 max-w-2xl mx-auto">
                         A collection of academic projects, research publications, and professional activities that showcase my journey in data analytics and business intelligence.
@@ -34,7 +33,7 @@ export const Projects = () => {
                             return (
                                 <div 
                                     key={index} 
-                                    className="group relative bg-card border border-border rounded-2xl p-8 hover:bg-secondary hover:border-primary/50 transition-all duration-500 hover:shadow-[0_8px_30px_rgba(86,185,242,0.15)] hover:-translate-y-1">
+                                    className="group relative bg-card border border-border rounded-2xl p-8 transition-all duration-500 hover:bg-secondary hover:border-primary/40 hover:shadow-[0_8px_30px_hsl(var(--primary)/0.15)] hover:-translate-y-1">
                                     <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-accent rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                     <div className="flex flex-col lg:flex-row gap-8">
@@ -44,21 +43,21 @@ export const Projects = () => {
                                                 <Icon className="text-primary group-hover:text-accent transition-colors" size={32} />
                                                 </div>
                                                 <div>
-                                                <h3 className="text-xl font-bold group-hover:text-primary transition-colors leading-tight">
+                                                <h3 className="text-xl font-bold group-hover:text-primary transition-colors leading-tight text-left">
                                                     {project.title}
                                                 </h3>
-                                                <p className="text-sm text-foreground/60 mt-1 group-hover:text-foreground/80 transition-colors">
+                                                <p className="text-sm text-muted mt-1 group-hover:text-foreground/80 transition-colors text-left">
                                                     {project.category}
                                                 </p>
                                                 </div>
                                             </div>
                             
                                             <div className="mt-6 space-y-3">
-                                                <div className="flex items-center gap-2 text-sm text-foreground/60 group-hover:text-foreground/80 transition-colors">
+                                                <div className="flex items-center gap-2 text-sm text-muted group-hover:text-foreground/80 transition-colors">
                                                     <BookOpen size={16} className="text-primary group-hover:text-accent transition-colors" />
                                                     <span>{project.course}</span>
                                                 </div>
-                                                <div className="flex items-center gap-2 text-sm text-foreground/60 group-hover:text-foreground/80 transition-colors">
+                                                <div className="flex items-center gap-2 text-sm text-muted group-hover:text-foreground/80 transition-colors">
                                                     <Users size={16} className="text-primary group-hover:text-accent transition-colors" />
                                                     <span>{project.team}</span>
                                                 </div>
@@ -71,14 +70,14 @@ export const Projects = () => {
 
                                         <div className="lg:w-3/4 space-y-6">
                                             <div>
-                                                <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-2">
+                                                <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-2">
                                                     MY ROLE
                                                 </h4>
                                                 <p className="text-primary font-medium text-lg group-hover:text-accent transition-colors">{project.role}</p>
                                             </div>
 
                                             <div>
-                                                <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                                                <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-,uted transition-colors mb-3 flex items-center gap-2">
                                                     <Sparkles size={16} className="text-primary group-hover:text-accent transition-colors" />
                                                     MY CONTRIBUTIONS
                                                 </h4>
@@ -92,7 +91,7 @@ export const Projects = () => {
                                             </div>
 
                                             <div>
-                                                <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                                                <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-3 flex items-center gap-2">
                                                     <Target size={16} className="text-primary group-hover:text-accent transition-colors" />
                                                     KEY ACHIEVEMENTS
                                                 </h4>
@@ -110,7 +109,7 @@ export const Projects = () => {
                                                 {project.tags.map((tag) => (
                                                     <span
                                                         key={tag}
-                                                        className="px-3 py-1 text-xs rounded-full bg-primary/5 text-primary border border-primary/10 hover:bg-primary/20 hover:text-accent hover:border-accent/30 transition-all hover:scale-105">
+                                                        className="px-3 py-1 text-xs rounded-full  bg-secondary text-primary border border-primary/20 hover:bg-primary/10 hover:text-accent hover:border-accent/40 10hover:bg-primary/20 hover:text-accent hover:border-accent/30 transition-all hover:scale-105">
                                                         {tag}
                                                     </span>))}
                                             </div>
@@ -132,13 +131,13 @@ export const Projects = () => {
                                         </h3>
                                         <div className="space-y-2 text-sm">
                                             <p className="text-primary font-medium group-hover:text-accent transition-colors">{pub.role}</p>
-                                            <p className="text-foreground/60 group-hover:text-foreground/80 transition-colors">{pub.conference}</p>
-                                            <p className="text-foreground/40 text-xs group-hover:text-foreground/60 transition-colors">{pub.isbn}</p>
+                                            <p className="text-muted group-hover:text-foreground/80 transition-colors">{pub.conference}</p>
+                                            <p className="text-foreground/40 text-xs group-hover:text-,uted transition-colors">{pub.isbn}</p>
                                         </div>
                                     </div>
                                     <div className="lg:w-2/3 space-y-6">
                                         <div>
-                                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-3 flex items-center gap-2">
                                                 <Sparkles size={16} className="text-primary group-hover:text-accent transition-colors" />
                                                 MY CONTRIBUTIONS
                                             </h4>
@@ -152,7 +151,7 @@ export const Projects = () => {
                                         </div>
                                         
                                         <div>
-                                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-3 flex items-center gap-2">
                                                 <Target size={16} className="text-primary group-hover:text-accent transition-colors" />
                                                 KEY FINDINGS
                                             </h4>
@@ -169,7 +168,7 @@ export const Projects = () => {
                                             {pub.tags.map((tag) => (
                                                 <span
                                                     key={tag}
-                                                    className="px-3 py-1 text-xs rounded-full bg-primary/5 text-primary border border-primary/10 hover:bg-primary/20 hover:text-accent hover:border-accent/30 transition-all hover:scale-105">
+                                                    className="px-3 py-1 text-xs rounded-full bg-secondary text-primary border border-primary/20 hover:bg-primary/10 hover:text-accent hover:border-accent/40 hover:bg-primary/20 hover:text-accent hover:border-accent/30 transition-all hover:scale-105">
                                                     {tag}
                                                 </span>))}
                                         </div>
@@ -209,7 +208,7 @@ export const Projects = () => {
                 
                     {activity.role && !activity.roles && (
                         <div className="mb-6">
-                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-3 flex items-center gap-2">
                                 <Sparkles size={16} className="text-primary group-hover:text-accent transition-colors" />
                                 ROLE
                             </h4>
@@ -221,7 +220,7 @@ export const Projects = () => {
                 
                     {activity.description && (
                         <div className="mb-6">
-                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-3 flex items-center gap-2">
                                 <BookOpen size={16} className="text-primary group-hover:text-accent transition-colors" />
                                 DESCRIPTION
                             </h4>
@@ -233,7 +232,7 @@ export const Projects = () => {
                 
                     {activity.roles && (
                         <div className="mb-6">
-                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-3 flex items-center gap-2">
                                 <Users size={16} className="text-primary group-hover:text-accent transition-colors" />
                                 POSITIONS HELD
                             </h4>
@@ -250,7 +249,7 @@ export const Projects = () => {
                 
                     {activity.achievements && (
                         <div className="mb-4">
-                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-foreground/60 transition-colors mb-3 flex items-center gap-2">
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 group-hover:text-muted transition-colors mb-3 flex items-center gap-2">
                                 <Target size={16} className="text-primary group-hover:text-accent transition-colors" />
                                 KEY ACHIEVEMENTS
                             </h4>
@@ -275,7 +274,7 @@ export const Projects = () => {
                                     <Award size={24} className="text-primary group-hover:text-accent group-hover:scale-110 transition-all duration-300" />
                                     <div>
                                         <p className="font-medium text-sm group-hover:text-primary transition-colors">{cert.name}</p>
-                                        <p className="text-xs text-foreground/40 group-hover:text-foreground/60 transition-colors text-left">{cert.issuer}</p>
+                                        <p className="text-xs text-foreground/40 group-hover:text-muted transition-colors text-left">{cert.issuer}</p>
                                     </div>
                                 </div>
                             </div>
