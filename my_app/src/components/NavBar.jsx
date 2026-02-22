@@ -56,10 +56,8 @@ export const NavBar = () => {
                     key={item.name}
                     to={item.href}
                     className={cn(
-                      "relative px-4 py-2 rounded-lg group text-xs sm:text-sm font-semibold whitespace-nowrap border border-transparent transition-all duration-300 ease-in-out",
-                      isActive ? "text-primary bg-primary/25 shadow-md font-bold border-gray-300/40 dark:bg-[#154165] dark:text-[#89c6f0] dark:border-gray-600/40"
-                      : "text-foreground/70 hover:text-primary hover:bg-primary/20 hover:shadow-md hover:scale-105 hover:border-gray-300/40 dark:hover:bg-[#124872]/40 dark:hover:border-gray-600/40"
-                    )}>
+                      "relative px-4 py-2 rounded-lg group text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-300 ease-in-out border border-transparent",
+                      isActive ? "text-primary bg-primary/20 border-border shadow-md": "text-foreground/70 hover:text-primary hover:bg-primary/10 hover:border-border hover:scale-105")}>
                     {item.name}
                     <span
                       className={cn(
