@@ -1,10 +1,10 @@
 import { NavBar } from "../components/NavBar";
 import { HeroSection } from "../pages/HeroSection";
-import { About} from "../pages/About";
-// import { SkillsSection } from "../pages/Skills";
-// import { ProjectsSection } from "../pages/Projects";
-// import { ContactSection } from "../pages/Contact";
-import { Footer } from "../pages/Footer";
+// import { About} from "../pages/About";
+// import { Skills from "../pages/Skills";
+// import { Projects} from "../pages/Projects";
+// import { ContactS } from "../pages/Contact";
+// import { Footer } from "../components/Footer";
 
 export const Home = () => { 
     return (
@@ -13,13 +13,13 @@ export const Home = () => {
             
             <main>
                 <HeroSection />
-                <About />
-                {/* <SkillsSection />
-                <ProjectsSection /> */}
-                {/* <ContactSection /> */}
+                {/* <About /> */}
+                {/* <Skills />
+                <Projects /> */}
+                {/* <Contact/> */}
             </main>
             
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
