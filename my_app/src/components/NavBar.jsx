@@ -42,7 +42,6 @@ export const NavBar = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-14 sm:h-16">
-
             <Link
               to="/"
               className="text-lg sm:text-2xl font-bold text-primary whitespace-nowrap hover:opacity-80 transition-opacity"
@@ -53,29 +52,20 @@ export const NavBar = () => {
             <div className="hidden md:flex items-center gap-3 sm:gap-10 md:gap-16">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.href;
-
                 return (
                   <Link
                     key={item.name}
                     to={item.href}
                     className={cn(
-                      "relative px-4 py-2 rounded-lg",
-                      "text-xs sm:text-sm font-semibold text-foreground/80 whitespace-nowrap",
+                      "relative px-4 py-2 rounded-lg group",
+                      "text-xs sm:text-sm font-semibold whitespace-nowrap",
                       "transition-all duration-300",
-
                       isActive
-                        ? "text-primary bg-primary/15 shadow-md"
-                        : `
-                          text-foreground/80
-                          hover:text-primary
-                          hover:bg-primary/10
-                          hover:shadow-lg
-                          hover:shadow-primary/20
-                        `
+                        ? "text-primary bg-primary/25 shadow-md font-bold"
+                        : "text-foreground/70 hover:text-primary hover:bg-primary/25 hover:shadow-lg hover:scale-105"
                     )}
                   >
                     {item.name}
-
                     <span
                       className={cn(
                         "absolute left-1/2 -bottom-1 h-[2px] bg-primary transition-all duration-300",
@@ -94,7 +84,7 @@ export const NavBar = () => {
 
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="md:hidden p-2 rounded-lg hover:bg-card transition-colors"
+                className="md:hidden p-2.5 rounded-lg hover:bg-primary/25 transition-all duration-300 hover:scale-105"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? (
@@ -118,20 +108,19 @@ export const NavBar = () => {
             : "opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col items-center py-8">
+        <div className="flex flex-col items-center py-8 px-4">
           {navItems.map((item, index) => {
             const isActive = location.pathname === item.href;
-
             return (
               <Link
                 key={item.name}
                 to={item.href}
                 className={cn(
-                  "w-full text-center py-4 text-base font-semibold rounded-lg",
-                  "transition-all duration-300",
+                  "w-full max-w-xs text-center py-4 text-base font-semibold rounded-xl",
+                  "transition-all duration-300 transform",
                   isActive
-                    ? "text-primary bg-primary/15 shadow-md"
-                    : "text-foreground/80 hover:text-primary hover:bg-primary/10 hover:shadow-md",
+                    ? "text-primary bg-primary/25 shadow-md font-bold scale-105"
+                    : "text-foreground/70 hover:text-primary hover:bg-primary/25 hover:shadow-lg hover:scale-105",
                   "opacity-0 animate-[fadeIn_0.3s_ease_forwards]"
                 )}
                 style={{ animationDelay: `${index * 0.1}s` }}
