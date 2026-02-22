@@ -59,7 +59,11 @@ export const About = () => {
                 "flex flex-col h-full",
                 "p-6 rounded-2xl border border-border",
                 "bg-card hover:bg-primary/5",
-                "transition-all duration-300 hover:shadow-xl"
+                "hover:bg-primary/10 dark:hover:bg-primary/20",
+                "hover:border-primary/30 dark:hover:border-primary/40",
+                "hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-primary/10",
+                "transition-all duration-300",
+                "hover:-translate-y-1"
             )}>
             <item.icon className="text-primary mb-4" size={28} />
             <h3 className="font-semibold text-lg mb-3 text-foreground">
