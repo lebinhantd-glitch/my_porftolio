@@ -34,7 +34,7 @@ return (
                 </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-[var(--animate-fade-in-delay-2)]">
                 <span className="gradient-text">Hi, I'm</span>
                 <br />
                 <span className="text-foreground">{personalInfo.name}</span>
@@ -53,17 +53,11 @@ return (
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform"/>
             </button>
                             
-            <button onClick={() => navigate("/contact")} className={cn(
-                    "cosmic-button group inline-flex items-center gap-2",
-                    "hover:scale-105 hover:shadow-[0_8px_30px_rgba(86,185,242,0.3)]",
-                    "transition-all duration-300")}>
+            <button onClick={() => navigate("/contact")} className={cn("cosmic-button group inline-flex items-center gap-2 transition-all duration-300")}>
                 <Mail size={18} /> Contact Me
             </button>
                 <a href="/cv.pdf"target="_blank" rel="noopener noreferrer" className={cn(
-                  "px-6 py-3 rounded-full border border-border",
-                  "hover:border-primary/50 hover:bg-primary/5",
-                  "transition-all duration-300 inline-flex items-center gap-2",
-                  "no-underline")}>
+                  "px-6 py-3 cosmic-border bg-transparent border border-border hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2 no-underline")}>
                 <FileText size={18} />Resume
                 </a>
             </div>
@@ -81,10 +75,8 @@ return (
                     rel="noopener noreferrer"
                     className={cn(
                     "p-2 rounded-lg",
-                    "bg-card border border-border",
+                    "group p-3 rounded-xl glass-effect transition-all duration-300 hover:scale-110",
                     "hover:bg-primary/20 hover:border-primary/50",
-                    "transition-all duration-300 hover:scale-110",
-                    "no-underline"
                     )}
                     aria-label={social.label}>
                     <social.icon size={20}
@@ -100,7 +92,6 @@ return (
             <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-background bg-card">
             <img
                 src={personalInfo.avatar}
-                alt={personalInfo.name}
                 className="w-full h-full object-cover object-[50%_10%] hover:scale-105 transition-transform duration-500"/>
             </div>
             </div>
