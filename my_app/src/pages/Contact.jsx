@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Github, Linkedin, Facebook, Send } from "lucide-react";
 import { cn } from "../lib/utlis";
+import { useState } from "react";
 
 export const Contact = () => {
     const contactInfo = {

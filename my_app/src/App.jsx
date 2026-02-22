@@ -5,6 +5,8 @@ import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound";
 import { Contact } from "./pages/Contact";
 import {Projects} from "./pages/Projects";
+import {Skills} from "./pages/Skills";
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +19,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
