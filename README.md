@@ -1,130 +1,213 @@
-<div align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=56B9F2&center=true&vCenter=true&width=435&lines=Hi%2C+I'm+An;Data+Analyst;AI+%26+Business+Student" alt="Typing SVG" />
-https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
-https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white
-https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
+# An Lê – Data & Business Analytics Portfolio  
 
-</div>
-👋 About Me
-I'm a third-year Digital Business & Artificial Intelligence student at the University of Economics and Law (UEL - VNU-HCM). My academic journey revolves around data analytics, econometrics, and machine learning, with a passion for transforming complex data into actionable business insights.
+Hi, I'm **An**.  
+I’m a Business Analytics student passionate about **Machine Learning, Econometrics, Financial Analysis, and AI-driven business solutions**.  
+This portfolio highlights selected projects that reflect my analytical thinking, technical skills, and leadership journey.
 
-🎯 Current Focus: Credit Risk Modeling, Anomaly Detection, and Financial Performance Evaluation
+---
 
-🛠️ Technical Stack
-<div align="center">
-Programming & Analysis
-https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
-https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white
-https://img.shields.io/badge/Stata-1B4F7A?style=for-the-badge&logo=stata&logoColor=white
-https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white
+## 🎯 Professional Focus
 
-ML & Data Science
-https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white
-https://img.shields.io/badge/XGBoost-EC1C24?style=for-the-badge&logo=xgboost&logoColor=white
-https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white
-https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
+- Machine Learning for Risk & Business Prediction  
+- Financial & Econometric Modeling  
+- Data-Driven Strategy & AI Applications  
+- System Analysis & Business Process Design  
+- Applied Research in Retail Analytics  
 
-Visualization & BI
-https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black
-https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white
-https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white
+---
 
-Web & Design
-https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
-https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white
+# 🚀 Featured Projects
 
-</div>
-📂 Featured Projects
-🔬 Machine Learning & Analytics
-Project	Description	Tech Stack	Grade
-Payment Delay Risk Classification	Built classification models (XGBoost, KNN, Logistic Regression) to predict late payment risk using transactional data	Python, Scikit-learn, XGBoost, Pandas	8.6
-Capital Structure Analysis	Panel data regression analysis of listed firms (HOSE & HNX) using Pooled OLS, FEM, and REM	Stata, Panel Data, Econometrics	8.0
-Retail Marketing Optimization	Multi-source data integration for marketing strategy optimization using AI tools	NocoDB, NocoAI, EDA	9.1
-📊 Financial Analysis
-Financial Statement Analysis - KIDO Group (2019-2023)
+## 1️⃣ Payment Delay Risk Classification  
+**Course:** Machine Learning in Business Analytics  
+**Role:** Machine Learning & Risk Data Analyst  
+**Team:** 5 members | **Grade:** 8.6  
 
-Comprehensive 5-year financial performance analysis
+**Objective:**  
+Predict late payment risk using transactional data.
 
-Profitability, liquidity, and trend analysis
+**Key Contributions:**  
+- Cleaned & preprocessed transactional data (missing values, encoding, scaling)  
+- Conducted EDA to uncover behavioral risk patterns  
+- Built and optimized 4 models:  
+  - XGBoost  
+  - Logistic Regression  
+  - KNN  
+  - SGD Classifier  
+- Performed hyperparameter tuning  
+- Evaluated models using Accuracy, Precision, Recall, F1-score, ROC-AUC  
+- Selected optimal model based on performance & overfitting analysis  
 
-Grade: 8.8 | Excel, Financial Ratios
+**Impact:**  
+- Identified key predictive risk factors  
+- Delivered insights for credit screening & early risk detection  
+- Developed a complete ML pipeline  
 
-📱 System Design & Development
-Tourism Booking Management System
+**Tech Stack:**  
+`Python` `Scikit-learn` `XGBoost` `Pandas` `Matplotlib`
 
-DFD, use case diagrams, and UI prototyping
+---
 
-Complete system architecture documentation
+## 2️⃣ Capital Structure Analysis (HOSE & HNX Firms)  
+**Course:** Econometrics  
+**Role:** Quantitative Financial Data Analyst  
+**Team:** 4 members | **Grade:** 8.0  
 
-Grade: 9.1 | Figma, System Design, Data Dictionary
+**Objective:**  
+Analyze determinants of capital structure using panel regression.
 
-Food Delivery Web Platform
+**Key Contributions:**  
+- Built Pooled OLS, FEM, REM models  
+- Conducted statistical tests (t-test, F-test, Wald test)  
+- Diagnosed multicollinearity (VIF)  
+- Tested heteroskedasticity (Breusch-Pagan)  
+- Improved explanatory power with interaction terms  
 
-Angular-based food ordering system
+**Impact:**  
+- Explained >50% variation in leverage ratios  
+- Identified key determinants of short vs long-term debt  
+- Validated model robustness  
 
-Real-time order tracking with location updates
+**Tools:**  
+`Stata` `Panel Data` `Econometrics`
 
-Grade: 8.0 | Angular, TypeScript, HTML/CSS
+---
 
-📝 Research & Publications
-Conference Paper
-"Enhancing Customer Insights: DBSCAN for Retail Behavior Anomalies"
-Second Author - SR-ICYREB 2025 Conference
-📚 ISBN: 978-604-44-7627-8, pp. 517A
+## 3️⃣ Financial Statement Analysis – KIDO Group (2019–2023)  
+**Course:** Financial Management  
+**Role:** Financial Data Analyst  
+**Team:** 7 members | **Grade:** 8.8  
 
-Key Contributions:
+**Objective:**  
+Evaluate financial performance over 5 years.
 
-Applied DBSCAN clustering with RFM framework for anomaly detection
+**Key Contributions:**  
+- Structured financial statements  
+- Calculated profitability & liquidity ratios  
+- Performed trend & volatility analysis  
+- Identified short-term solvency risks  
 
-Parameter optimization using Davies-Bouldin Index and Silhouette Score
+**Impact:**  
+- Converted financial metrics into strategic insights  
+- Detected abnormal profitability fluctuations  
+- Proposed liquidity improvement recommendations  
 
-Developed interactive Power BI dashboards for visualization
+**Tools:**  
+`Excel` `Financial Ratios` `Trend Analysis`
 
-Identified ~0.07% anomalous transactions contributing disproportionately to revenue
+---
 
-🏆 Extracurricular Activities
-Club Leadership & Involvement
-Activity	Role	Period	Key Achievements
-Book and Action Club - UEL	President	Jan 2025 - Present	• Managed 20+ members
-• Reading Space Program: 50+ participants (↑10% YoY)
-• Fundraising: 700,000 VND
-AI4I Club	R&D Team Member	Nov 2023 - Present	• Co-organized AIb1 & AIb2 competitions (80+ participants)
-Volunteer Experience
-Event Collaborator - Opening Ceremony 2023 with Prime Minister Phạm Minh Chính
+## 4️⃣ Retail Marketing Optimization via Multi-source Data Integration  
+**Course:** AI Solutions in Business & Management  
+**Role:** Data Processing & Strategic Analysis  
+**Team:** 3 members | **Grade:** 9.1  
 
-Green Summer Campaign - UEL (2024, 2025)
+**Objective:**  
+Optimize marketing strategy using integrated AI tools.
 
-Admissions Counseling - UEL (2024)
+**Key Contributions:**  
+- Integrated multi-source data (NocoDB + AI tools)  
+- Conducted marketing performance EDA  
+- Proposed AI-driven optimization strategies  
+- Contributed to research development  
 
-📜 Certifications
-<div align="center">
-Certification	Issuer	Category
-IELTS 5.5	IELTS	Language
-SQL Basic	HackerRank	Database
-Python Basic	HackerRank	Programming
-JavaScript Intermediate	HackerRank	Programming
-CSS Basic	HackerRank	Web
-Big Data & ML Fundamentals	Cloud Ace	Data Science
-MOS PowerPoint	Microsoft	Office
-</div>
-📈 GitHub Analytics
-<div align="center"> <img height="180em" src="https://github-readme-stats.vercel.app/api?username=lebinhantd-glitch&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lebinhantd-glitch&layout=compact&langs_count=7&theme=tokyonight"/> </div>
-🎯 Current Focus
-🚀 Deepening expertise in Credit Risk Modeling and Anomaly Detection
+**Impact:**  
+- Identified high-value customer segments  
+- Built data-driven marketing framework  
 
-📊 Exploring advanced Machine Learning techniques for business applications
+**Tools:**  
+`NocoDB` `NocoAI` `EDA` `Marketing Analytics`
 
-🤝 Seeking opportunities in Data Analytics, Risk Analytics, and Business Intelligence
+---
 
-📫 Let's Connect!
-<div align="center">
-I'm always open to discussing data analytics, research collaborations, or potential opportunities!
+## 5️⃣ Tourism Booking Management System  
+**Course:** MIS Analysis & Design  
+**Role:** Business & System Analyst  
+**Team:** 5 members | **Grade:** 9.1  
 
-https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin
-https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail
-https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github
+**Key Contributions:**  
+- Designed DFD & Use Case diagrams  
+- Defined system scope & requirements  
+- Built UI prototype (Figma)  
+- Designed data dictionary  
 
-⭐️ From lebinhantd-glitch
+**Impact:**  
+- Developed complete system architecture  
+- Created performance monitoring dashboard  
 
-</div>
+**Tools:**  
+`DFD` `Use Case` `Figma` `System Design`
+
+---
+
+## 6️⃣ Food Delivery Web Platform  
+**Course:** Business Web Development  
+**Role:** Frontend & System Design Contributor  
+**Team:** 5 members | **Grade:** 8.0  
+
+**Key Contributions:**  
+- Built Angular-based frontend  
+- Implemented authentication & order tracking  
+- Designed system architecture  
+
+**Impact:**  
+- Delivered fully functional ordering platform  
+- Integrated real-time tracking  
+
+**Tech Stack:**  
+`Angular` `TypeScript` `HTML/CSS`
+
+---
+
+# 📚 Publication
+
+## Enhancing Customer Insights: DBSCAN for Retail Behavior Anomalies  
+**Conference:** SR-ICYREB 2025  
+**Role:** Second Author  
+
+**Research Focus:**  
+Applied DBSCAN + RFM framework for anomaly detection in retail data.
+
+**Key Findings:**  
+- 0.07% anomalous transactions contributed disproportionately to revenue  
+- Anomalies concentrated in offline channels & specific territories  
+- Revealed blind spots in KPI-based monitoring  
+
+**Tools:**  
+`DBSCAN` `RFM` `Power BI` `Clustering`
+
+---
+
+# 🏆 Leadership & Activities
+
+- **President – Book & Action Club (UEL)**  
+  - Led 20+ members  
+  - Organized reading & fundraising programs  
+  - Increased participation by 10% YoY  
+
+- **AI4I Club – R&D Team Member**  
+- Volunteer – Green Summer Campaign  
+- Volunteer – Admissions Counseling  
+
+---
+
+# 📜 Certifications
+
+- IELTS 5.5  
+- SQL Basic – HackerRank  
+- Python Basic – HackerRank  
+- JavaScript Intermediate – HackerRank  
+- Big Data & ML Fundamentals – Cloud Ace  
+- MOS PowerPoint  
+
+---
+
+# 📫 Contact
+
+- Email: *(your email here)*  
+- LinkedIn: *(your LinkedIn link here)*  
+- GitHub: *(your GitHub link here)*  
+
+---
+
+⭐ *Thank you for visiting my portfolio. I am always open to research collaboration, data projects, and analytical challenges.*
