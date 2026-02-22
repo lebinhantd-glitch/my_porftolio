@@ -1,9 +1,8 @@
-// sections/SkillsSection.jsx
 import { useState } from "react";
 import { cn } from "../lib/utlis";
 import { skillsData, skillCategories } from "../data/skillsData";
 
-export const Skills= () => {
+export const Skills = () => {
     const [activeCategory, setActiveCategory] = useState("technical");
 
     return (
@@ -32,9 +31,8 @@ export const Skills= () => {
                                     "flex items-center gap-3 px-6 py-3 rounded-full text-sm font-medium transition-all duration-300",
                                     activeCategory === cat.id
                                         ? "bg-primary text-primary-foreground shadow-lg scale-105"
-                                        : "bg-card border border-border hover:border-primary/50 hover:text-primary"
-                                )}>
-                                <Icon size={18} />
+                                        : "bg-card border border-border hover:bg-secondary hover:border-primary/50 hover:text-primary hover:shadow-lg hover:-translate-y-0.5")}>
+                                <Icon size={18} className="transition-transform group-hover:scale-110" />
                                 {cat.label}
                             </button>
                         );
@@ -47,24 +45,38 @@ export const Skills= () => {
                         return (
                             <div
                                 key={index}
-                                className="group relative bg-card border border-border rounded-xl p-5 hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
-                            >
-                                <div className="flex items-center gap-3">
-                                    <div className="p-3.0 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                                        <Icon className="text-primary" size={20} />
+                                className="group relative bg-card border border-border rounded-xl p-5 hover:bg-secondary hover:border-primary/50 transition-all duration-300 hover:shadow-[0_8px_20px_rgba(86,185,242,0.12)] hover:-translate-y-1">
+                                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-r-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                
+                                <div className="flex items-center gap-3 pl-1">
+                                    <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+                                        <Icon className="text-primary group-hover:text-accent transition-colors duration-300" size={20} />
                                     </div>
                                     
-                                    <span className="text-foreground/80 font-medium group-hover:text-primary transition-colors text-justify">
+                                    <span className="text-foreground/80 font-medium group-hover:text-primary group-hover:translate-x-1 transition-all duration-300 text-justify">
                                         {skill.name}
                                     </span>
                                 </div>
+
+                                {skill.level && (
+                                    <div className="mt-3 ml-16">
+                                        <div className="h-3 w-full bg-primary/10 rounded-full overflow-hidden">
+                                            <div 
+                                                className="h-full bg-gradient-to-r from-primary to-accent rounded-full group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-500"
+                                                style={{ width: skill.level }}
+                                            />
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         );
                     })}
                 </div>
 
                 <div className="mt-12 text-center text-foreground/60 text-sm">
-                    <p>Skills are continuously developed through academic projects and self-study.</p>
+                    <p className="hover:text-foreground/80 transition-colors duration-300">
+                        Skills are continuously developed through academic projects and self-study.
+                    </p>
                 </div>
             </div>
         </section>

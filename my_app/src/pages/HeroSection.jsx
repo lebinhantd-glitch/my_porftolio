@@ -1,8 +1,10 @@
 import { Github, Linkedin, Mail, ArrowRight, FileText, Facebook } from "lucide-react";
 import { cn } from "../lib/utlis";
 import avatar from "../assets/avatar.png";
+import { useNavigate } from "react-router-dom";
 export const HeroSection = () => {
-  const personalInfo = {
+    const navigate = useNavigate();
+    const personalInfo = {
     name: "Lê Bình An",
     role: "Data Analyst",
     university: "University of Economics and Law (UEL)",
@@ -16,9 +18,8 @@ export const HeroSection = () => {
       { icon: Facebook, link: "https://www.facebook.com/nana.159919", label: "Facebook" },
       { icon: Mail, link: "mailto:lebinhantd@gmail.com", label: "Email" },
     ],
-  };
-
-  return (
+    };
+return (
     <section id="hero" className={cn( "relative min-h-screen flex items-center justify-center overflow-hidden")}>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
         <div className="container mx-auto px-4 relative z-10">
@@ -48,26 +49,21 @@ export const HeroSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
-                <button onClick={() => { const element = document.getElementById("projects"); element?.scrollIntoView({ 
-                    behavior: "smooth" });}} className={cn( "cosmic-button group inline-flex items-center gap-2" )}> View Projects
+                <button onClick={() => navigate("/projects")} className={cn("cosmic-button group inline-flex items-center gap-2")}>View Projects
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform"/>
-                
-                </button>
-                <button onClick={() => { const element = document.getElementById("contact");
-                  element?.scrollIntoView({ behavior: "smooth" });}} className="cosmic-border group inline-flex items-center gap-2">
+            </button>
+                            
+            <button onClick={() => navigate("/contact")} className={cn(
+                    "cosmic-button group inline-flex items-center gap-2",
+                    "hover:scale-105 hover:shadow-[0_8px_30px_rgba(86,185,242,0.3)]",
+                    "transition-all duration-300")}>
                 <Mail size={18} /> Contact Me
-                </button>
-
-                <a href="/cv.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
+            </button>
+                <a href="/cv.pdf"target="_blank" rel="noopener noreferrer" className={cn(
                   "px-6 py-3 rounded-full border border-border",
                   "hover:border-primary/50 hover:bg-primary/5",
                   "transition-all duration-300 inline-flex items-center gap-2",
-                  "no-underline"
-                )}
-                >
+                  "no-underline")}>
                 <FileText size={18} />Resume
                 </a>
             </div>
