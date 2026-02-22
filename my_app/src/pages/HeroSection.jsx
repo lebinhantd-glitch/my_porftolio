@@ -26,9 +26,9 @@ return (
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="text-center lg:text-left order-2 lg:order-1">
 
-            <div className={cn( "inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6",
+            <div className={cn( "inline-flex items-center px-4 py-2 rounded-full mb-6",
                 "bg-primary/10 border border-primary/20")}>
-                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                <span className="h-2 bg-primary rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-primary">
                     {personalInfo.university} - {personalInfo.major}
                 </span>

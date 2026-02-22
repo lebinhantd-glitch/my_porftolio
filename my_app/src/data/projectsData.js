@@ -183,6 +183,15 @@ export const activities = [
         role: "Volunteer",
         type: "Volunteer"
     },
+        {
+        title: "AI4I - Artificial Intelligence for Interdisciplinarity Club",
+        role: "Research & Development Team Member",
+        period: "November 2023 - Present",
+        achievements: [
+            "Co-organized AIb1 and AIb2 competitions with 80+ participants",
+        ],
+        type: "Club"
+    },
     {
         title: "Book and Action Club - UEL",
         roles: [
@@ -199,15 +208,6 @@ export const activities = [
         ],
         type: "Club"
     },
-    {
-        title: "AI4I - Artificial Intelligence for Interdisciplinarity Club",
-        role: "Research & Development Team Member",
-        period: "November 2023 - Present",
-        achievements: [
-            "Co-organized AIb1 and AIb2 competitions with 80+ participants",
-        ],
-        type: "Club"
-    }
 ];
 
 export const certifications = [
