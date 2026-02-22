@@ -78,32 +78,36 @@
   :root {
     --background: 200 30% 98%;
     --foreground: 213 60% 23%;
+
     --primary: 215 68% 42%;
     --primary-foreground: 0 0% 100%;
+
     --card: 200 70% 95%;
     --border: 200 30% 87%;
+
     --secondary: 210 50% 92%;
     --secondary-foreground: 213 60% 23%;
+
     --accent: 200 70% 65%;
     --muted: 210 30% 94%;
   }
   
   .dark {
-    --background: 222 47% 11%;
+   --background: 209 63% 11%;
     --foreground: 210 40% 98%;
-    
-    --primary: 210 80% 60%;
-    --primary-foreground: 222 47% 11%;
-    
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
-    
-    --accent: 200 70% 50%;
-    
-    --card: 222 47% 15%;
-    
-    --border: 217 33% 25%;
-    --muted: 217 33% 20%;
+
+    --primary: 203 78% 58%;
+    --primary-foreground: 210 40% 98%;
+
+    --card: 206 61% 25%;
+    --border: 205 58% 32%;
+
+    --secondary: 206 55% 30%;
+    --secondary-foreground: 210 40% 95%;
+
+    --accent: 202 77% 64%;
+
+    --muted: 206 40% 22%;
   }
 
   * {

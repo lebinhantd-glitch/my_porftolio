@@ -112,8 +112,7 @@ export const Projects = () => {
                                                 {project.tags.map((tag) => (
                                                     <span
                                                         key={tag}
-                                                        className="px-3 py-1 text-xs rounded-full bg-primary/5 text-primary border border-primary/10 hover:bg-primary/10 transition-colors"
-                                                    >
+                                                        className="px-3 py-1 text-xs rounded-full bg-primary/5 text-primary border border-primary/10 hover:bg-primary/10 transition-colors">
                                                         {tag}
                                                     </span>
                                                 ))}
@@ -289,7 +288,7 @@ export const Projects = () => {
                                     <Award size={24} className="text-primary group-hover:scale-110 transition-transform" />
                                     <div>
                                         <p className="font-medium text-sm">{cert.name}</p>
-                                        <p className="text-xs text-foreground/40">{cert.issuer}</p>
+                                        <p className="text-xs text-foreground/40 text-left">{cert.issuer}</p>
                                     </div>
                                 </div>
                             </div>
