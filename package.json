@@ -3,9 +3,32 @@
     "@radix-ui/react-toast": "^1.2.15",
     "@tailwindcss/vite": "^4.2.0",
     "class-variance-authority": "^0.7.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
     "lucide-react": "^0.575.0",
+    "mysql2": "^3.17.4",
     "react-router-dom": "^7.13.0",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.0"
-  }
+  },
+  "name": "my_porftolio",
+  "version": "1.0.0",
+  "description": "Hi, I'm An. Welcome to my portfolio! Here, you’ll find my skills, experiments, projects and social activities that reflect my learning journey and professional growth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lebinhantd-glitch/my_porftolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lebinhantd-glitch/my_porftolio/issues"
+  },
+  "homepage": "https://github.com/lebinhantd-glitch/my_porftolio#readme"
 }
