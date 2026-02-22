@@ -31,7 +31,7 @@ export const About = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
 
         <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4 animate-[var(--animate-fade-in-delay-1)]">
                 About <span className="gradient-text">Me</span>
             </h2>
                 <p className="text-foreground/70 max-w-3xl mx-auto text-lg">
@@ -39,7 +39,7 @@ export const About = () => {
                 at the University of Economics and Law (VNU-HCM).</p>
         </div>
 
-        <div className="bg-card border border-border rounded-2xl p-8 mb-14 shadow-lg backdrop-blur-sm">
+        <div className="glass-effect rounded-2xl p-8 mb-14 animate-[var(--animate-fade-in-delay-2)">
             <p className="text-foreground/80 leading-relaxed mb-6 text-justify">
             My academic interests focus on data analytics, financial modeling, and the application 
             of machine learning in business contexts. Through coursework and research-based projects,
@@ -54,18 +54,10 @@ export const About = () => {
             </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"> {highlights.map((item, index) => (
-            <div key={index} className={cn(
-                "flex flex-col h-full",
-                "p-6 rounded-2xl border border-border",
-                "bg-card hover:bg-primary/5",
-                "hover:bg-primary/10 dark:hover:bg-primary/20",
-                "hover:border-primary/30 dark:hover:border-primary/40",
-                "hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-primary/10",
-                "transition-all duration-300",
-                "hover:-translate-y-1"
-            )}>
-            <item.icon className="text-primary mb-4" size={28} />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {highlights.map((item, index) => (
+            <div key={index} className={cn("group flex flex-col h-full p-6 rounded-2xl glass-effect transition-all duration-300 hover:-translate-y-2 hover:shadow-xl")}>
+            <item.icon className="text-primary mb-4 transition-transform duration-300 group-hover:scale-110" size={28}/>
             <h3 className="font-semibold text-lg mb-3 text-foreground">
                 {item.title}
             </h3>
