@@ -63,7 +63,7 @@ export const Projects = () => {
                                                 </div>
                                                 <div className="flex items-center gap-2 text-sm">
                                                     <Award size={16} className="text-primary group-hover:text-accent transition-colors" />
-                                                    <span className="font-semibold text-primary group-hover:text-accent transition-colors">Final Grade: {project.grade}</span>
+                                                    <span className="font-semibold text-primary group-hover:text-accent transition-colors">Overall Grade: {project.grade}</span>
                                                 </div>
                                             </div>
                                         </div>

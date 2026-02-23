@@ -70,7 +70,7 @@ export const About = () => {
         <div className="mt-24 text-center">
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
                 I am interested in pursuing opportunities in
-                <span className="text-primary font-semibold">Data Analytics</span>,{" "}
+                <span className="text-primary font-semibold"> Data Analytics</span>,{" "}
                 <span className="text-primary font-semibold">Risk Analytics</span>, or{" "}
                 <span className="text-primary font-semibold">Business Intelligence</span>, 
                 where I can further refine my analytical skills, learn from practical business environments, and contribute meaningfully to data-informed decision-making processes.
